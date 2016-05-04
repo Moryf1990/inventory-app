@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="<%= env === 'development' ? '/styles/main.scss.css' : '/styles/main.scss.min.css?'+version %>" />
+
+	</head>
+	<body>
+		<nav id="nav"></nav>
+		<main id="main"></main>
+		<script type="text/javascript" src="<%= env === 'development' ? '/scripts/bundle.js' : '/scripts/bundle.min.js?'+version %>"></script>
+	</body>
+</html>
