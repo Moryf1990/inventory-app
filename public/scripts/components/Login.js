@@ -6,7 +6,17 @@ export default React.createClass({
 		return (
 			<section className="login">
 				<Nav/>
-				<h1>Login</h1>
+				<h1>Inventory App</h1>
+				<section className="loginSection">
+					<h1>Login</h1>
+					<div>Email</div>
+					<input/>
+					<div>Password</div>
+					<input/>
+					<div>
+						<button className="loginButton">Login</button>
+					</div>
+				</section>
 			</section>
 		);
 	}
