@@ -14,17 +14,17 @@ export default React.createClass({
 		return (
 			<section className="register">
 				<Nav />
-				<h1>Inventory App</h1>
+				<h1 className="inventoryApp">Inventory App</h1>
 				<section className="registerSection">
 					<form onSubmit={this.register}>
-						<h1>Register</h1>
-						<div>First Name</div>
+						<h1 className="registerHeaders">Register</h1>
+						<div className="registerHeaders">First Name</div>
 						<input ref="firstName"/>
-						<div>Last Name</div>
+						<div className="registerHeaders">Last Name</div>
 						<input ref="lastName"/>
-						<div>Email</div>
+						<div className="registerHeaders">Email</div>
 						<input ref="email"/>
-						<div>Password</div>
+						<div className="registerHeaders">Password</div>
 						<input ref="password"/>
 						<div>
 							<button className="registerButton">Login</button>

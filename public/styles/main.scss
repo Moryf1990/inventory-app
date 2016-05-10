@@ -2,8 +2,17 @@
 	background: green;
 }
 
-@import 'home';
-@import 'navigation';
-@import 'login';
-@import 'register';
-@import 'addProduct';
+@import 'home',
+	    'navigation',
+	    'login',
+	    'register',
+	    'addProduct',
+	    'variables';
+
+body {
+	background: $bodyBackground;
+}
+
+.inventoryApp {
+	color: $textColor;
+}

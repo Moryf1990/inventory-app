@@ -6,12 +6,12 @@ export default React.createClass({
 		return (
 			<section className="home">
 				<Nav/>
-				<h1>Inventory App</h1>
+				<h1 className="inventoryApp">Inventory App</h1>
 				<h2 className="inventoryHeader">Welcome to Inventory App</h2>
 				<h3 className="inventoryText">You must login before accessing the system</h3>
 				
-				<button className="homeLogin"><a href="/login">Login</a></button>
-				<button className="homeRegister"><a href = "/register">Register</a></button>
+				<button className="homeLogin"><a href="/login" className="text">Login</a></button>
+				<button className="homeRegister"><a href = "/register" className="text">Register</a></button>
 			</section>
 		);
 	}

@@ -1,6 +1,19 @@
+@import 'variables';
+
 .registerSection {
 	border: 1px solid black;
 	width: 50%;
 	text-align: center;
 	margin: 0 auto;
+	background: $sectionBackground;
+}
+
+.registerButton {
+	background: $buttonBackground;
+	border-radius: 0.5em;
+	color: $buttonColor;
+}
+
+.registerHeaders {
+	color: $textColor;
 }

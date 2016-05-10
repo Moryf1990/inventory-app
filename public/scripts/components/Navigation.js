@@ -2,21 +2,6 @@ import React from 'react';
 import {Link} from 'react-router';
 import user from '../models/UserModel.js';
 
-// const Nav = React.createClass({
-// 	render: function() {
-// 		return (
-// 			<nav className="navBar">
-// 				<Link className="navLink" to="/addProduct">AddProduct</Link>
-// 				<Link className="navLink" to="/register">Register</Link>
-// 				<Link className="navLink" to="/login">Login</Link>
-// 				<Link className="navLink" to="/">Home</Link>
-// 			</nav>
-// 		);
-// 	}
-// });
-
-
-
 const Nav = React.createClass({
 	// componentWillMount: function() {
 	// 	this.props.router.on('route', () => {
@@ -47,7 +32,6 @@ const Nav = React.createClass({
 			links.push(<a className="navLink" href="/auth/logout">Logout</a>);
 		}
 		else {
-			links.push(<Link className="navLink" to="/addProduct">AddProduct</Link>);
 			links.push(<Link className="navLink" to="/register">Register</Link>);
 			links.push(<Link className="navLink" to="/login">Login</Link>);
 			links.push(<Link className="navLink" to="/">Home</Link>);

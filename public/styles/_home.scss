@@ -1,18 +1,31 @@
+@import 'variables';
+
 .inventoryHeader {
 	text-align: center;
 	font-size: 4em;
+	color: $textColor;
 }
 
 .inventoryText {
 	text-align: center;
+	color: $textColor;
 }
 
 .homeLogin {
 	margin: 0 auto;
 	display: block;
+	background: $buttonBackground;
+	border-radius: 0.5em;
 }
 
 .homeRegister {
 	margin: 0 auto;
 	display: block;
+	background: $buttonBackground;
+	border-radius: 0.5em;
+}
+
+.text {
+	color: $buttonColor;
+	text-decoration: none;
 }

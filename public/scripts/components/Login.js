@@ -15,13 +15,13 @@ export default React.createClass({
 		return (
 			<section className="login">
 				<Nav/>
-				<h1>Inventory App</h1>
+				<h1 className="inventoryApp">Inventory App</h1>
 				<section className="loginSection">
 					<form onSubmit={this.login}>
-						<h1>Login</h1>
-						<div>Email</div>
+						<h1 className="loginHeaders">Login</h1>
+						<div className="loginHeaders">Email</div>
 						<input ref="email"/>
-						<div>Password</div>
+						<div className="loginHeaders">Password</div>
 						<input ref="password"/>
 						<div>
 							<button className="loginButton">Login</button>

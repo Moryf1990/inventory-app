@@ -1,6 +1,19 @@
+@import 'variables';
+
 .loginHomeSection {
 	border: 1px solid black;
 	width: 50%;
 	text-align: center;
 	margin: 0 auto;
+	background: $sectionBackground;
+}
+
+.addProductHeaders {
+	color: $textColor;
+}
+
+.addProductButton {
+	background: $buttonBackground;
+	border-radius: 0.5em;
+	color: $buttonColor;
 }

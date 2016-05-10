@@ -6,25 +6,25 @@ export default React.createClass({
 		return (
 			<section>
 				<Nav />
-				<h1>Inventory App</h1>
+				<h1 className="inventoryApp">Inventory App</h1>
 				<section className="loginHomeSection">
-					<h1>Add Product</h1>
-					<div>Product Name</div>
+					<h1 className="addProductHeaders">Add Product</h1>
+					<div className="addProductHeaders">Product Name</div>
 					<input/>
-					<div>Price</div>
+					<div className="addProductHeaders">Price</div>
 					<input/>
-					<div>Category</div>
+					<div className="addProductHeaders">Category</div>
 					<select>
 						<option value=""></option>
 						<option value="Laptops">Laptops</option>
 					</select>
-					<div>Quantity</div>
+					<div className="addProductHeaders">Quantity</div>
 					<input/>
-					<div>Description</div>
+					<div className="addProductHeaders">Description</div>
 					<textarea></textarea>
 					<div>
-						<button>Cancel</button>
-						<button>Add Product</button>	
+						<button className="addProductButton">Cancel</button>
+						<button className="addProductButton">Add Product</button>	
 					</div>
 				</section>
 			</section>
