@@ -10,7 +10,7 @@ const UserModel = Backbone.Model.extend ({
 		updatedAt: null,
 		deletedAt: null
 	},
-	urlRoot: '',
+	urlRoot: '/api/v1/user',
 	idAttribute: 'id'
 
 });

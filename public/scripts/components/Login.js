@@ -14,7 +14,6 @@ export default React.createClass({
 	render: function() {
 		return (
 			<section className="login">
-				<Nav/>
 				<h1 className="inventoryApp">Inventory App</h1>
 				<section className="loginSection">
 					<form onSubmit={this.login}>

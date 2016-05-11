@@ -13,7 +13,6 @@ export default React.createClass({
 	render: function() {
 		return (
 			<section className="register">
-				<Nav />
 				<h1 className="inventoryApp">Inventory App</h1>
 				<section className="registerSection">
 					<form onSubmit={this.register}>

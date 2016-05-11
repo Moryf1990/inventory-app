@@ -7,6 +7,7 @@ import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 import Home from './components/Home.js';
 import Login from './components/Login.js';
 import Register from './components/Register.js';
+import App from './components/App.js';
 import AddProduct from './components/AddProduct.js';
 import $ from 'jquery';
 // import Nav from './components/Navigation.js';
@@ -19,10 +20,12 @@ $.ajaxSetup({
 
 const router = (
 	<Router history={browserHistory}>
-		<Route path="/addProduct" component={AddProduct}/>
-		<Route path="/login" component={Login}/>
-		<Route path="/register" component={Register}/>
-		<Route path="/" component={Home}/>
+		<Route path="/" component={App}>
+			<Route path="/addProduct" component={AddProduct}/>
+			<Route path="/login" component={Login}/>
+			<Route path="/register" component={Register}/>
+			<IndexRoute component={Home}/>
+		</Route>
 	</Router>
 );
 

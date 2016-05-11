@@ -3,9 +3,9 @@ import Nav from './Navigation.js';
 
 export default React.createClass({
 	render: function() {
+		console.log('home render')
 		return (
 			<section className="home">
-				<Nav/>
 				<h1 className="inventoryApp">Inventory App</h1>
 				<h2 className="inventoryHeader">Welcome to Inventory App</h2>
 				<h3 className="inventoryText">You must login before accessing the system</h3>

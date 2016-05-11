@@ -9,7 +9,7 @@ const Nav = React.createClass({
 	// 	});
 	// },
 	componentWillMount: function() {
-		console.log('window user', window.user);
+		console.log('nav compnent will mount, window user', window.user);
 		user.on('change', () => {
 			if(user.get('id')) {
 				this.setState({loggedIn: true});
