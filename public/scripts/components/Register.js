@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from './Navigation.js';
 import user from '../models/UserModel.js';
 import $ from 'jquery';
 

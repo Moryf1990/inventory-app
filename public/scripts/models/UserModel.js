@@ -16,4 +16,4 @@ const UserModel = Backbone.Model.extend ({
 });
 
 
- export default new UserModel;
+ export default new UserModel(window.user);

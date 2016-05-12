@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from './Navigation.js';
 import ProductCollection from '../collections/product.js';
 
 export default React.createClass({

@@ -3,30 +3,34 @@ import {Link} from 'react-router';
 import user from '../models/UserModel.js';
 
 const Nav = React.createClass({
-	// componentWillMount: function() {
-	// 	this.props.router.on('route', () => {
-	// 	this.forceUpdate();
-	// 	});
-	// },
 	componentWillMount: function() {
-		console.log('nav compnent will mount, window user', window.user);
-		user.on('change', () => {
-			if(user.get('id')) {
-				this.setState({loggedIn: true});
-			}
-			else {
-				this.setState({loggedIn: false});
-			}
+		// console.log('nav compnent will mount, window user', window.user);
+		// user.on('change', () => {
+		// 	if(user.get('id')) {
+		// 		this.setState({loggedIn: true});
+		// 	}
+		// 	else {
+		// 		this.setState({loggedIn: false});
+		// 	}
+		// });
+		// user.set(window.user);
+
+		this.state.user.on('change', () => {
+			this.setState({
+				user: user
+			});
 		});
-		user.set(window.user);
 	},
 	getInitialState: function() {
-		return {loggedIn: false};
+		return {
+			loggedIn: false,
+			user: user
+		};
 	},
 	render: function() {
 		var links = [];
-		if(this.state.loggedIn) {
-
+		if(user.get('id')) {
+			links.push(<Link className="navLink" to="/viewPage">ViewPage</Link>);
 			links.push(<Link className="navLink" to="/addProduct">AddProduct</Link>);
 			links.push(<Link className="navLink" to="/">Home</Link>);
 			links.push(<a className="navLink" href="/auth/logout">Logout</a>);
