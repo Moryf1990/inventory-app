@@ -21,7 +21,7 @@ export default React.createClass({
 						<div className="loginHeaders">Email</div>
 						<input ref="email"/>
 						<div className="loginHeaders">Password</div>
-						<input ref="password"/>
+						<input ref="password" type="password"/>
 						<div>
 							<button className="loginButton">Login</button>
 						</div>

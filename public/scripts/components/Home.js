@@ -40,7 +40,7 @@ export default React.createClass({
 			return (
 				<section className="home">
 					<h1 className="inventoryApp">Inventory App</h1>
-					<div>
+					<div className="productContainer">
 						{allProducts}
 					</div>
 				</section>
