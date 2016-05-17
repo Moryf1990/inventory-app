@@ -46,6 +46,7 @@ export default React.createClass({
 			},
 			success: (loggedIn) => {
 				this.state.user.set(loggedIn);
+				browserHistory.push('/');
 			},
 			error: (error) => {
 				this.setState({errors: error.responseJSON});

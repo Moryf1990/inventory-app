@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from './Navigation.js';
 import $ from 'jquery';
 import user from '../models/UserModel.js';
-import {browserHistory, } from 'react-router';
+import {browserHistory} from 'react-router';
 
 export default React.createClass({
 	getInitialState: function() {

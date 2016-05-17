@@ -1,18 +1,25 @@
 import React from 'react';
 import user from '../models/UserModel.js';
 import productCollection from '../collections/product.js';
+import productModel from '../models/ProductModel.js';
+import NewProduct from './NewProduct.js';
 
 export default React.createClass({
 	componentDidMount: function() {
 		productCollection.on('update', () => {
-			this.setState({products: productCollection});
+			console.log('product collection was updated');
+			this.setState({
+				products: productCollection,
+				product: productModel
+			});
 		});
 		productCollection.fetch();
 	},
 
 	getInitialState: function() {
 		return {
-			products: productCollection
+			products: productCollection,
+			product: productModel
 		};
 	},
 	// componentWillMount: function() {
@@ -34,7 +41,12 @@ export default React.createClass({
 		if(user.get('id')) {
 			const allProducts = this.state.products.map((product, idex) => {
 				return (
-					<option>{product.get('name')} {product.get('price')} {product.get('category')}</option>
+					<NewProduct 
+					name={product.get('name')}
+					price={product.get('price')}
+					category={product.get('category')}
+					id={product.get('id')}
+					product={product}/>
 				);
 			});
 			return (
@@ -58,4 +70,6 @@ export default React.createClass({
 			);
 		}
 	}
+
+	
 });

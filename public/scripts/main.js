@@ -9,6 +9,7 @@ import Login from './components/Login.js';
 import Register from './components/Register.js';
 import App from './components/App.js';
 import AddProduct from './components/AddProduct.js';
+// import NewProduct from './components/NewProduct.js';
 import ViewPage from './components/ViewPage.js';
 import $ from 'jquery';
 // import Nav from './components/Navigation.js';

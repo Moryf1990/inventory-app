@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductCollection from '../collections/product.js';
+import {browserHistory} from 'react-router';
 
 export default React.createClass({
 	render: function() {
@@ -38,7 +39,10 @@ export default React.createClass({
 			price: this.refs.price.value,
 			category: this.refs.category.value,
 			quantity: this.refs.quantity.value,
-			description: this.refs.description.value
+			description: this.refs.description.value,
+				success: (addProduct) => {
+					browserHistory.push('/');
+				}	
 		});
 	}
 });
